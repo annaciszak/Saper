@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Gra.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="GraNaCzas.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Okno.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pole.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="0.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="1.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="2.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="3.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="4.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="5.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="6.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="7.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="8.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="bitmap.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="bomba.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="bombax.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="flaga.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="flagax.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="smutek.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="usmiech.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="wstecz.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="wyniki.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
