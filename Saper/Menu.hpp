@@ -16,7 +16,7 @@ public:
 	int MainMenu(sf::RenderWindow&);
 	int Trudnosc(sf::RenderWindow&);
 	int TrudnoscCzasowa(sf::RenderWindow& w);
-	int Statystyki(sf::RenderWindow& w);
+	int Statistics(sf::RenderWindow& w);
 private:
 	sf::Sprite background;
 	sf::Font font;
@@ -48,7 +48,7 @@ int Menu::MainMenu(sf::RenderWindow& w) {
 
 	sf::Text tekst[ileNapisow];
 
-	std::string napisy[] = { "Standard", "Na czas", "Statystyki", "Wyjdz" };
+	std::string napisy[] = { "Standard", "Time attack", "Statistics", "Quit" };
 
 	for (int i = 0; i < ileNapisow; i++) {
 		tekst[i].setFont(this->font);
@@ -88,7 +88,7 @@ int Menu::MainMenu(sf::RenderWindow& w) {
 					return this->TrudnoscCzasowa(w);
 					break;
 				case 2:
-					return this->Statystyki(w);
+					return this->Statistics(w);
 					break;
 				case 3:
 					return -1;
@@ -121,7 +121,7 @@ int Menu::Trudnosc(sf::RenderWindow& w) {
 
 	sf::Text tekst[ileNapisow];
 
-	std::string napisy[] = { "Latwy", "Sredni", "Trudny", "Powrot" };
+	std::string napisy[] = { "Easy", "Medium", "Hard", "Return" };
 
 	for (int i = 0; i < ileNapisow; i++) {
 		tekst[i].setFont(this->font);
@@ -223,13 +223,13 @@ std::vector<std::vector<std::string>> loadHighscore() {
 	return wyniki;
 }
 
-int Menu::Statystyki(sf::RenderWindow& w) {
+int Menu::Statistics(sf::RenderWindow& w) {
 
 	const int ileNapisow = 1;
 
 	sf::Text tekst;
 
-	std::string napis = "Powrót";
+	std::string napis = "Return";
 
 	tekst.setFont(this->font);
 	tekst.setString(napis);
@@ -244,12 +244,12 @@ int Menu::Statystyki(sf::RenderWindow& w) {
 
 	wyniki.insert(wyniki.begin(), naglowek);
 
-	wyniki[1].insert(wyniki[1].begin(), "£atwy");
-	wyniki[2].insert(wyniki[2].begin(), "Sredni");
-	wyniki[3].insert(wyniki[3].begin(), "Trudny");
-	wyniki[4].insert(wyniki[4].begin(), "Czasowy\n  £atwy");
-	wyniki[5].insert(wyniki[5].begin(), "Czasowy\n  Sredni");
-	wyniki[6].insert(wyniki[6].begin(), "Czasowy\n  Trudny");
+	wyniki[1].insert(wyniki[1].begin(), "East");
+	wyniki[2].insert(wyniki[2].begin(), "Medium");
+	wyniki[3].insert(wyniki[3].begin(), "Hard");
+	wyniki[4].insert(wyniki[4].begin(), "Time attack\n  Easy");
+	wyniki[5].insert(wyniki[5].begin(), "Time attack\n  Medium");
+	wyniki[6].insert(wyniki[6].begin(), "Time attack\n  Hard");
 
 	std::vector<std::vector<sf::Text>> test(7, std::vector<sf::Text>(6));
 
@@ -302,7 +302,7 @@ int Menu::TrudnoscCzasowa(sf::RenderWindow& w) {
 
 	sf::Text tekst[ileNapisow];
 
-	std::string napisy[] = { "£atwy", "Sredni", "Trudny", "Powrot" };
+	std::string napisy[] = { "Easy", "Medium", "Hard", "Return" };
 
 	for (int i = 0; i < ileNapisow; i++) {
 		tekst[i].setFont(this->font);

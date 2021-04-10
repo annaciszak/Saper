@@ -211,7 +211,7 @@ void Gra::setup() {
 	for (int w = 0; w < iloscKolumn; w++) {
 		for (int h = 0; h < iloscWierszy; h++) {
 
-			if (rand() % 100 < 95) {
+			if (rand() % 100 < 70) {
 				plansza[w][h] = Pole('0', mapaTekstur);
 
 				ileNieBomb++;
@@ -567,7 +567,7 @@ void Gra::obslugaFlag(Plansza& plansza, int i, int j) {
 			plansza[i][j].flaga = 0;
 			liczbaFlag++;
 			flagi.str("");
-			flagi << "Flagi: " << liczbaFlag;
+			flagi << "Flags: " << liczbaFlag;
 			ileFlag.setString(flagi.str());
 		}
 		else {
@@ -577,7 +577,7 @@ void Gra::obslugaFlag(Plansza& plansza, int i, int j) {
 				liczbaFlag--;
 			}
 			flagi.str("");
-			flagi << "Flagi: " << liczbaFlag;
+			flagi << "Flags: " << liczbaFlag;
 			ileFlag.setString(flagi.str());
 		}
 	}
@@ -667,7 +667,7 @@ void Gra::draw(sf::RenderWindow& w) {
 	fontFlag.loadFromFile("mononoki.ttf");
 	flagi.str("");
 	flagi.clear();
-	flagi << "Flagi: " << liczbaFlag;
+	flagi << "Flags: " << liczbaFlag;
 
 	//win.setPosition(sf::Vector2f(70, 50));
 

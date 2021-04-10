@@ -557,7 +557,7 @@ void GraCzasowa::obslugaFlag(Plansza& plansza, int i, int j) {
 			plansza[i][j].flaga = 0;
 			liczbaFlag++;
 			flagi.str("");
-			flagi << "Flagi: " << liczbaFlag;
+			flagi << "Flags: " << liczbaFlag;
 			ileFlag.setString(flagi.str());
 		}
 		else {
@@ -567,7 +567,7 @@ void GraCzasowa::obslugaFlag(Plansza& plansza, int i, int j) {
 				liczbaFlag--;
 			}
 			flagi.str("");
-			flagi << "Flagi: " << liczbaFlag;
+			flagi << "Flags: " << liczbaFlag;
 			ileFlag.setString(flagi.str());
 		}
 	}
@@ -664,7 +664,7 @@ void GraCzasowa::draw(sf::RenderWindow& w) {
 	fontFlag.loadFromFile("mononoki.ttf");
 	flagi.str("");
 	flagi.clear();
-	flagi << "Flagi: " << liczbaFlag;
+	flagi << "Flags: " << liczbaFlag;
 
 	ileFlag.setCharacterSize(18);
 	ileFlag.setPosition(sf::Vector2f(30, 20));
